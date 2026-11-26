@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: test ! -f BROKEN || (echo "Build failed: see BROKEN" && exit 1)
+        run: test ! -f BROKEN || (echo "Build failed, see BROKEN" && exit 1)
